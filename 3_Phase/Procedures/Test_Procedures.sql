@@ -1,0 +1,42 @@
+-- 2.1 COUNT_MOVIES_MONTH_YEAR <month> <year>
+EXEC COUNT_MOVIES_MONTH_YEAR @Month = 5, @Year = 2010;
+
+-- 2.2 COUNT_MOVIES_DIRECTOR <full-name>
+EXEC COUNT_MOVIES_DIRECTOR @FullName = 'Steven Spielberg';
+
+-- 2.3 COUNT_ACTORS_IN_2_YEARS <year-1> <year-2>
+EXEC COUNT_ACTORS_IN_2_YEARS @Year1 = 1990, @Year2 = 2005;
+
+-- 2.4 COUNT_MOVIES_BETWEEN_YEARS_WITH_N_ACTORS <year-start> <year-end> <min> <max>
+EXEC COUNT_MOVIES_BETWEEN_YEARS_WITH_N_ACTORS 
+     @YearStart = 2000, @YearEnd = 2010, @MinActors = 3, @MaxActors = 10;
+
+-- 2.5 GET_MOVIES_ACTOR_YEAR <year> <full-name>
+EXEC GET_MOVIES_ACTOR_YEAR @Year = 2012, @FullName = 'Leonardo DiCaprio';
+
+-- 2.6 GET_MOVIES_WITH_ACTOR_CONTAINING <name>
+EXEC GET_MOVIES_WITH_ACTOR_CONTAINING @Search = 'Tom';
+
+-- 2.7 GET_TOP_4_YEARS_WITH_MOVIES_CONTAINING <search-string>
+EXEC GET_TOP_4_YEARS_WITH_MOVIES_CONTAINING @Search = 'Star';
+
+-- 2.8 GET_ACTORS_BY_DIRECTOR <num> <full-name>
+EXEC GET_ACTORS_BY_DIRECTOR @Num = 10, @DirName = 'Christopher Nolan';
+
+-- 2.9 TOP_MONTH_MOVIE_COUNT <year>
+EXEC TOP_MONTH_MOVIE_COUNT @Year = 2015;
+
+-- 2.10 TOP_VOTED_ACTORS <num> <year>
+EXEC TOP_VOTED_ACTORS @Num = 10, @Year = 2018;
+
+-- 2.11 TOP_MOVIES_WITH_MORE_GENDER <num> <year> <gender>
+EXEC TOP_MOVIES_WITH_MORE_GENDER @Num = 10, @Year = 2010, @Gender = 'M';
+
+-- 2.12 TOP_MOVIES_WITH_GENDER_BIAS <num> <year>
+EXEC TOP_MOVIES_WITH_GENDER_BIAS @Num = 10, @Year = 2010;
+
+-- 2.13 TOP_6_DIRECTORS_WITHIN_FAMILY <year-start> <year-end>
+EXEC TOP_6_DIRECTORS_WITHIN_FAMILY @YearStart = 2000, @YearEnd = 2020;
+
+-- 2.14 DISTANCE_BETWEEN_ACTORS <actor-1> <actor-2>
+EXEC DISTANCE_BETWEEN_ACTORS @Actor1 = 123, @Actor2 = 456;
