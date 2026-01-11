@@ -32,6 +32,7 @@ Projeto de base de dados de filmes (scripts SQL + aplicação Java) para gerir/i
 
 ## Pré-requisitos
 - JDK 11+ (ou compatível)
+- VS Code (para usar a extensão MSSQL)
 - Servidor de BD compatível com os scripts (ex: SQL Server)
 - Azure Data Studio (para importação CSV & o fornecido pelo .pdf de como se faz a importação dos dados)
 - Driver JDBC no diretório 3_Phase/deisIMBD-App/lib/ (permite a ligação do server SQL com Java)
@@ -41,7 +42,7 @@ Projeto de base de dados de filmes (scripts SQL + aplicação Java) para gerir/i
 ## Correr-Projeto
 
 ### Configuração-do-servidor-SQL
-1. Adicionar a connexão no SQL Server(Ctrl+Alt+D) 
+1. Adicionar a connexão no MSSQL(Extensão no VSCode) (Ctrl+Alt+D) 
 2. Profile Name: deis-imdb-project | servername: localhost\SQLEXPRESS | Trust server certificate: TRUE | Authentication Type: Windows Authentication
 3. Clicar em connect
 4. Clicar com o butão direito no deis-imdb-project e selecionar New Query e correr o comando seguinte:
